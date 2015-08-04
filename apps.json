@@ -38,7 +38,6 @@
         },
         "#notfications": {
             "title":"Notfications",
-            "rule":"afterlogin",
             "icon":"<span class='glyphicon glyphicon-bullhorn pull-right'></span>"
         },
         "#settings": {
@@ -60,9 +59,13 @@
             "clas":"border-top",
             "icon":"<span class='glyphicon glyphicon-globe pull-right'></span>"
         },
-        "#about": {
+        "#aboutUs": {
             "title":"About Us",
             "icon":"<span class='glyphicon glyphicon-info-sign pull-right'></span>"
+        },
+        "#contactUs": {
+            "title":"Contact Us",
+            "icon":"<span class='glyphicon glyphicon-phone-alt pull-right'></span>"
         }
     }
 }
