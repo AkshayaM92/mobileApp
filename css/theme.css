@@ -30,3 +30,148 @@
 a {
 	color:#f7931e;
 }*/
+.panel {
+  border:none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-bottom: 30px;
+}
+.panel .panel-heading {
+  line-height: 34px;
+  padding: 0 15px;
+  min-height: 34px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  position: relative;
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 -2px 0 rgba(0,0,0,.05);
+  -webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.05);
+}
+
+.tab-bg-info {
+
+  border-bottom: none;
+}
+
+.profile-activity, .act-time , .profile-activity .act-in, .profile-activity .act-out {
+    position: relative;
+}
+
+.act-time .act-in .text {
+    border: 1px solid  #7B8BB0;
+    padding: 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.act-time .act-out .text {
+    border: 1px solid #e3e6ed;
+    padding: 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.act-time p {
+    margin: 0;
+}
+.act-time .attribution {
+    font-size: 11px;
+    margin: 0px 0 5px;
+}
+.act-time {
+    overflow: hidden;
+    padding:8px 0;
+}
+
+.act-in a, .act-in a:hover{
+    color: #b64c4c;
+    text-decoration: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 13px;
+}
+.act-out a, .act-out a:hover{
+    color: #288f98;
+    text-decoration: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.a-fb {
+    background: #3B5998;
+}
+.a-tweet {
+    background: #55acee;
+}
+.a-linkIn {
+    background: #007bb6;
+}
+
+.btn-fb {
+    background: #3B5998;
+    width:17em;
+}
+.btn-tweet {
+    background: #55acee;
+}
+.btn-linkIn {
+    background: #007bb6;
+}
+
+.boot-tab {
+    border-radius: 4px;
+}
+
+.settings-div {
+    position:fixed;
+    top: 0;
+    bottom: 86;
+    left: 0;
+    right: 40;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+}
+.settings-div-variant {
+  display: inline-block;
+      position: fixed;
+      top: 0;
+      bottom: 86;
+      left: 0;
+      right: 40;
+      width: 200px;
+      height: 100px;
+      margin: auto;
+}
+
+.bg-img{
+    background: url('../css/images/slide10.jpg');
+    background-size: cover;
+}
+.tab-content-highlight{
+  box-shadow: 10px 10px 5px;
+}
+
+.page-head {
+    height:50px;
+    background:#7DD3FC;
+    border:1px solid #CCC;
+    width:960px;
+    margin:0px auto;
+    padding: 10px 134px;
+    position:fixed;
+    font-size: 22px;
+    font-weight: 400;
+}
