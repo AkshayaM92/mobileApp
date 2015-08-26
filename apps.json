@@ -3,7 +3,7 @@
     "APPNAME": "Dummy App",
     "APPKEY": "",
     "REMOTEKEY": "erty",
-    "PAGEHOME": "#home",
+    "PAGEHOME": "#notfications",
     "PAGEERROR": "#error",
     "URL": {
         "DATASRC":"http://www.demo.openlogiks.org/services/"
