@@ -177,3 +177,17 @@ a {
     font-size: 22px;
     font-weight: 400;
 }
+
+
+.page-head-contact {
+    height:50px;
+    width:960px;
+    margin:0px auto;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.btn-appColor {
+    background: #1D87E5;
+    
+}
