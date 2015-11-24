@@ -1352,3 +1352,98 @@ h2 {
 		display: block;
 	}
 }
+
+
+.tweet-content {
+    padding: 6px 3px; 
+   	margin: 0px 1;
+   	border-bottom: 1px solid #D4D4D4;
+    border-radius: 6px;
+}
+
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    -moz-force-broken-image-icon: 1;
+}
+
+.fullname {
+    font-weight: bold;
+    color: #292f33;
+}
+
+
+.username, .time, .time a, .metadata, .metadata button.btn-link, .metadata a {
+    font-size: 13px;
+    color: #8899a6;
+}
+
+.TweetTextSize.TweetTextSize--16px {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.tweet .js-tweet-text {
+    white-space: pre-wrap;
+}
+
+.tweet p {
+    word-wrap: break-word;
+}
+
+.expanded-content {
+    position: relative;
+    height: 0;
+    display: none;
+}
+
+.ProfileTweet-action {
+    display: inline-block;
+    width: 80px;
+}
+
+.ProfileTweet-actionButton, .ProfileTweet-actionButtonUndo {
+    color: #aab8c2;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0 2px;
+    position: relative;
+}
+
+.tweet-footer{
+	padding-top: 1px;
+}
+
+.ProfileTweet-action .dropdown .dropdown-menu {
+    margin: 8px -10px 0
+}
+
+.u-hiddenVisually {
+    position: absolute!important;
+    overflow: hidden!important;
+    width: 1px!important;
+    height: 1px!important;
+    padding: 0!important;
+    border: 0!important;
+    clip: rect(1px,1px,1px,1px)!important;
+}
+
+.ProfileTweet-actionList {
+    font-size: 0;
+    line-height: 1;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+
+.panel-notify{
+	     padding: 5px;
+}
+.tab-content{
+	background-color: white;
+	border-radius: 6px;
+}

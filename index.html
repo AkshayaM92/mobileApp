@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/theme.css" />
 
     <script src="js/libs/require.js"></script>
+   <!--<script src="js/libs/handlebars.js"></script>-->
 </head>
 <body class="cbp-spmenu-push">
 	<div id="wrap" class='wrapper bg-img'>
@@ -39,6 +40,9 @@ requirejs.config({
         },
         'libs/bootstrap': {
         	deps: ['libs/jquery'],
+        },
+        Handlebars: {
+            exports: 'Handlebars'
         }
     },
     paths: {
@@ -46,16 +50,19 @@ requirejs.config({
         libs: '../js/libs',
         lang: '../misc/ling',
         plugins: '../app/plugins',
+        Handlebars:  '../js/libs/handlebars',
     }
+
 });
 requirejs([
 		'libs/jquery',
 		'libs/bootstrap',
 		'libs/quo.standalone',
-    'commons',
+        'Handlebars',
+        'commons',
 		'logiks',
 		'logiks.ux',
-    'logiks.app'
+        'logiks.app'
 	],function(util) {
         require(['app/app']);
 	});

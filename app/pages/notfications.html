@@ -20,7 +20,7 @@
                                 </li>
                             </ul>
   </header>
-  <div class="panel-body">
+  <div class="panel-body panel-notify">
                             <div class="tab-content ">
                                 <div id="facebook" class="tab-pane ">
                                     <div class="profile-activity">
@@ -47,26 +47,42 @@
                                 <!-- profile -->
                                 <div id="twitter" class="tab-pane active">
 
-                                    <div class="act-time">
-                                        <div class="activity-body act-in">
-                                            <span class="arrow"></span>
-                                            <div class="text tab-content-highlight">
-                                                <p class="attribution"><a href="#">Om Thacker</a> at 4:25pm, 30th July 2015</p>
-                                                <p>It is a long established fact that a reader will be distracted layout</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="act-time">
-                                        <div class="activity-body act-in">
-                                            <span class="arrow"></span>
-                                            <div class="text tab-content-highlight">
-                                                <p class="attribution"><a href="#">Om Thacker </a> at 5:25pm, 30th July 2015</p>
-                                                <p>Knowledge speaks, but wisdom listens.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <script id="some-template" type="text/x-handlebars-template">
+                                        {{#tweets}} 
+                                            <div class="tweet-content">
+                                                <div class="row notification-row-style">
+                                                    <div class="col-xs-3">
+                                                        <img src="{{user.profile_image_url}}" class="avatar" alt="Cinque Terre" width="304" height="236"> 
+                                                    </div>
+                                                    <div class="col-xs-9">
+                                                        <strong class="fullname">{{user.name}}</strong> 
+                                                        <span class="username">{{user.screen_name}}</span>
+                                                        <span class="time">{{getTime}}</span>
+                                                    
+                                                        <p class="TweetTextSize TweetTextSize--16px js-tweet-text tweet-text">{{text}}</p>
+                                                        <div class="expanded-content">
+                                                        </div>
 
-
+                                                        <div class="tweet-footer">
+                                                            <div class="u-hiddenVisually">
+                                                               <span class="ProfileTweet-action--reply u-hiddenVisually"></span> 
+                                                            </div>
+                                                            <div class="ProfileTweet-actionList js-actions">  
+                                                                <div class="ProfileTweet-action ProfileTweet-action--reply">
+                                                                    <button class="ProfileTweet-actionButton u-textUserColorHover js-actionButton js-actionReply" type="button">
+                                                                        <div class="IconContainer js-tooltip" data-original-title="Reply">
+                                                                            <span class="Icon Icon--reply">R</span>
+                                                                            <span class="u-hiddenVisually">Reply</span>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {{/tweets}} 
+                                </script>
                                 </div>
                                 <!-- edit-profile -->
                                 <div id="linkedIn" class="tab-pane">
@@ -93,3 +109,4 @@
                                 </div>
                             </div>
           </div>
+<script type="text/javascript" src="handle.js"></script>
